@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "918fb59ec1be5be7f6b0cddb9c16dcf4",
+    "content-hash": "098b6d00c4356166877faabc0285d300",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2102,35 +2102,29 @@
         },
         {
             "name": "pusher/pusher-php-server",
-            "version": "dev-new-lib",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pusher/pusher-http-php.git",
-                "reference": "bd6e4cb32b7d93de9196d6e21ef266a8aeadf9a7"
+                "reference": "03d3417748fc70a889c97271e25e282ff1ff0ae3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/bd6e4cb32b7d93de9196d6e21ef266a8aeadf9a7",
-                "reference": "bd6e4cb32b7d93de9196d6e21ef266a8aeadf9a7",
+                "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/03d3417748fc70a889c97271e25e282ff1ff0ae3",
+                "reference": "03d3417748fc70a889c97271e25e282ff1ff0ae3",
                 "shasum": ""
             },
             "require": {
-                "ext-json": "*",
-                "php": ">=5.3.3"
+                "ext-curl": "*",
+                "php": "^5.4 || ^7.0"
             },
             "require-dev": {
-                "ext-curl": "*",
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "2.x"
-            },
-            "suggest": {
-                "ext-curl": "Pusher will use a different HTTP adapter if cURL is present"
+                "phpunit/phpunit": "^4.8 || ^5.7"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-new-lib": "3.0-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -2142,15 +2136,21 @@
             "license": [
                 "MIT"
             ],
-            "description": "Client code for the REST API",
-            "homepage": "https://github.com/pusher/pusher-http-php/",
+            "description": "Library for interacting with the Pusher REST API",
             "keywords": [
-                "http",
+                "events",
+                "messaging",
+                "php-pusher-server",
+                "publish",
+                "push",
                 "pusher",
+                "real time",
+                "real-time",
+                "realtime",
                 "rest",
-                "web service"
+                "trigger"
             ],
-            "time": "2018-11-07T10:44:03+00:00"
+            "time": "2017-10-20T11:18:01+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
