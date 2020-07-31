@@ -1,22 +1,14 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<h5>Example Component</h5>
 </template>
 
 <script>
     export default {
         mounted() {
+            Echo.channel('test')
+            .listen('Test',(e)=>{
+                console.log('echo tings-e=',e)
+            })
             console.log('Component mounted.')
         }
     }
